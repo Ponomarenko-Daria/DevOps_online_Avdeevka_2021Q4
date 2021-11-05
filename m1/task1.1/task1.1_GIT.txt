@@ -1,0 +1,15 @@
+66696b7 (HEAD -> master, origin/master, origin/develop, develop) HEAD@{0}: merge develop: Fast-forward
+6fb80e5 HEAD@{1}: checkout: moving from develop to master
+66696b7 (HEAD -> master, origin/master, origin/develop, develop) HEAD@{2}: commit (merge): merge all branch in develop
+bd6d2a7 (origin/images, images) HEAD@{3}: merge images: Fast-forward
+b2d4877 HEAD@{4}: checkout: moving from styles to develop
+7ff1771 (origin/styles, styles) HEAD@{5}: commit: change inde.html + style.css
+a59d365 HEAD@{6}: commit: Create style.css
+b2d4877 HEAD@{7}: checkout: moving from develop to styles
+b2d4877 HEAD@{8}: checkout: moving from images to develop
+bd6d2a7 (origin/images, images) HEAD@{9}: commit: Change index.html
+162841d HEAD@{10}: commit: save image
+b2d4877 HEAD@{11}: checkout: moving from develop to images
+b2d4877 HEAD@{12}: commit: create index.html
+6fb80e5 HEAD@{13}: checkout: moving from master to develop
+6fb80e5 HEAD@{14}: commit (initial): create readme.txt
