@@ -156,6 +156,7 @@ I install docker into my EC2 instance. Then install programs into the container.
 4. Create zone "daria-ponomarenko.pp.ua" on service Route53 with the name "daria-ponomarenko.pp.ua". </p>
 5. Add 2 records with the names "daria-ponomarenko.pp.ua" and "www.daria-ponomarenko.pp.ua" to my route53 record.</p>
 6. Set up "daria-ponomarenko.pp.ua" to redirect bucket "daria-ponomarenko.pp.ua" and record "www.daria-ponomarenko.pp.ua" to bucket "www.daria-ponomarenko.pp.ua". 
+</p>
 <img src="https://github.com/Ponomarenko-Daria/DevOps_online_Avdeevka_2021Q4/blob/master/m2/task2.2/ScreenshotTask2.2/15.3.jpg" width="700">
 </p>
 <img src="https://github.com/Ponomarenko-Daria/DevOps_online_Avdeevka_2021Q4/blob/master/m2/task2.2/ScreenshotTask2.2/15.jpg" width="700">
