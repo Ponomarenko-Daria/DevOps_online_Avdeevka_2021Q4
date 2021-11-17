@@ -16,7 +16,7 @@ Server0 (DHCP Server) - 10.96.20.100 /24
 </p>
 Checked the connection using the ping command.
 </p>
-<img src="" width="400">
+<img src="https://github.com/Ponomarenko-Daria/DevOps_online_Avdeevka_2021Q4/blob/master/m3/task3/ScreanshotsTask3/1.1.jpg" width="400">
 </p>
 Server1 (WebServer 1) - 2.96.20.50 /24
 </p>  
@@ -26,15 +26,21 @@ Server3 (DNS Server) - 2.96.20.150 /24
 </p>  
 Checked the connection using the ping command.
 </p>
-<img src="" width="400">
+<img src="https://github.com/Ponomarenko-Daria/DevOps_online_Avdeevka_2021Q4/blob/master/m3/task3/ScreanshotsTask3/1.2.jpg" width="400">
+</p> 
+<img src="https://github.com/Ponomarenko-Daria/DevOps_online_Avdeevka_2021Q4/blob/master/m3/task3/ScreanshotsTask3/1.3.jpg" width="400">
 </p> 
 On Client1, I replaced the Ethernet network adapter with a Wi-FI adapter and assigned a static address.
 </p> 
-<img src="" width="400">
+<img src="https://github.com/Ponomarenko-Daria/DevOps_online_Avdeevka_2021Q4/blob/master/m3/task3/ScreanshotsTask3/1.4.jpg" width="400">
 </p> 
+<img src="https://github.com/Ponomarenko-Daria/DevOps_online_Avdeevka_2021Q4/blob/master/m3/task3/ScreanshotsTask3/1.5.jpg" width="400">
+</p> 
+<img src="https://github.com/Ponomarenko-Daria/DevOps_online_Avdeevka_2021Q4/blob/master/m3/task3/ScreanshotsTask3/1.6.jpg" width="400">
+</p>
 Checked the connection using the ping command.
 </p>
-<img src="" width="400">
+<img src="https://github.com/Ponomarenko-Daria/DevOps_online_Avdeevka_2021Q4/blob/master/m3/task3/ScreanshotsTask3/1.7.jpg" width="400">
 </p> 
 </details>
 
@@ -52,7 +58,7 @@ ISP 3:
 </p>
 Switch 1 (Data Center):
 </p>
-<img src="" width="2000">
+<img src="https://github.com/Ponomarenko-Daria/DevOps_online_Avdeevka_2021Q4/blob/master/m3/task3/ScreanshotsTask3/Task3.2.jpg" width="2000">
 </p>
 </details>
 
