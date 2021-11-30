@@ -98,8 +98,9 @@ If there are insufficient privileges, an error is thrown.
 Restoring a database from backup.
 </p> <img src="https://github.com/Ponomarenko-Daria/DevOps_online_Avdeevka_2021Q4/blob/master/m4/Screenshots4/part2.3.jpg" width="500"> </p> 
 
-2.Transfer your local database to RDS AWS.
-
+2.Transfer my local database to RDS AWS.  
+Connect to my database.
+</p> <img src="https://github.com/Ponomarenko-Daria/DevOps_online_Avdeevka_2021Q4/blob/master/m4/Screenshots4/part2.4.jpg" width="500"> </p> 
 </details>
 
 <details><summary> Part 3 </summary>
