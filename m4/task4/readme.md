@@ -62,7 +62,13 @@ TEXT
 </details>
 
 <details><summary> Part 2 </summary>
-
+1.Make backup of your database.
+2.Delete the table and/or part of the data in the table.
+3.Restore your database.
+13.Transfer your local database to RDS AWS.
+14.Connect to your database.
+15.Execute SELECT operator similar step 6.
+16.Create the dump of your database.
 </details>
 
 <details><summary> Part 3 </summary>
