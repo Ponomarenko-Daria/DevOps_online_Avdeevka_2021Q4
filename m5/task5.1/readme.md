@@ -64,12 +64,39 @@ and
     tree -L 1
 And we get:
 </p><img src=""></p>
-2.
+2. The "file" command is used to determine the type of file. 
+This command has various experiences that can be viewed using command:
+
+        man file
+        
 </p>
-3.
+3. There are three commands for navigating the terminal and their different options are ls, cd and pwd.
+The pwd command is extremely simple and just shows you the directory you are in.</p>
+The most commonly used navigation command is cd. </p>
+To go to the required directory, use cd path/to/directory.  
+
+The command cd with no arguments will return us in our home dirictory.  
+
+To move from the current directory, we specify these characters at the beginning of the argument cd ./daria/test. 
 </p>
-4.
+
+One of the simplest and most useful commands is ls command.
+With command allows you to view the contants of a directory, permissions of a file or directory, who owns the directory or file, and more.  
+The standard output of the command shows all directories and files in the directory we are in.
 </p>
+
+4. Using different keys, the ls command provides us with different information.  
+Ls command options:  
+-m  - output content separated by commas;  
+-r  - reverse information output;  
+-s  - sort by file size;  
+-x  - sort the output alphabetically;  
+-t  - sort by time of creation / last modification of the file.
+</p><img src=""></p>
+-l  - long output format;  
+-a  - shows all files and folders including hidden ones;  
+-R  - display the contents of the current directory, and if there are subdirectories, then the contents of this directory.
+</p><img src=""></p>
 5.
 </p>
 6.
