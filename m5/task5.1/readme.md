@@ -34,13 +34,10 @@ To exit view mode, press q.
 </p>
 The less command contains the same functionality as more, but also has additional functionality.
 </p>
-7.
-</p>
-8.
-</p>
 </details>
 
 <details><summary> Part 2 </summary>
+    
 1. The tree command displays a hierarchical structure of directories graphically. Has many options and is very useful. </p>
 Here are some examples of how to use this command.
 We execute the command: 
@@ -64,6 +61,7 @@ and
     tree -L 1
 And we get:
 </p><img src=""></p>
+
 2. The "file" command is used to determine the type of file. 
 This command has various experiences that can be viewed using command:
 
@@ -97,14 +95,24 @@ Ls command options:
 -a  - shows all files and folders including hidden ones;  
 -R  - display the contents of the current directory, and if there are subdirectories, then the contents of this directory.
 </p><img src=""></p>
+
+
 5.
 </p>
+
+
 6.
 </p>
+
+
 7.
 </p>
+
+
 8.
 </p>
+
+
 9.
 </p>
 10.
