@@ -15,7 +15,7 @@ The /etc/passwd file structure consists of:
 </p>
 Example:
 </p>
-<img src=""></p>
+<img src="https://github.com/Ponomarenko-Daria/DevOps_online_Avdeevka_2021Q4/blob/master/m5/Screensots5.2/1.1.jpg"></p>
 Groups are defined in the / etc / group file  
 
 The /etc/group file structure:
@@ -27,7 +27,7 @@ The /etc/group file structure:
 </p>
 Example:
 </p>
-<img src=""></p>
+<img src="https://github.com/Ponomarenko-Daria/DevOps_online_Avdeevka_2021Q4/blob/master/m5/Screensots5.2/1.2.jpg"></p>
 </p>
 To see a list of all users, you need to enter the command
 
@@ -55,7 +55,7 @@ GID (Group ID) - the group identifier is used to organize access for several use
   
       id
      
- <img src=""></p>
+ <img src="https://github.com/Ponomarenko-Daria/DevOps_online_Avdeevka_2021Q4/blob/master/m5/Screensots5.2/3.1.jpg"></p>
  </p>
  You can determine the group ID of a specific user using the command:
  
@@ -72,7 +72,7 @@ You can find out all the groups to which a user belongs using the command:
 You can see which groups a user belongs to using the id or groups / command.  
 
 For example:
-<img src=""></p>
+<img src="https://github.com/Ponomarenko-Daria/DevOps_online_Avdeevka_2021Q4/blob/master/m5/Screensots5.2/4.1.jpg"></p>
 </p>
  </details>
 
@@ -127,9 +127,9 @@ The /etc/skel/ directory is used to start the home directory when a user is firs
 
 An example of the "skeletons" layout of user files:
 
- </p><img src=""></p>
+ </p><img src="https://github.com/Ponomarenko-Daria/DevOps_online_Avdeevka_2021Q4/blob/master/m5/Screensots5.2/7.1.jpg"></p>
  
- </p><img src=""></p>
+ </p><img src="https://github.com/Ponomarenko-Daria/DevOps_online_Avdeevka_2021Q4/blob/master/m5/Screensots5.2/7.2.jpg"></p>
  
   </details> 
   
@@ -276,7 +276,7 @@ The extended directory information format is ls -l.
 
 There is such information
 </p>
-<img src=""></p>
+<img src="https://github.com/Ponomarenko-Daria/DevOps_online_Avdeevka_2021Q4/blob/master/m5/Screensots5.2/11.1.jpg"></p>
 In the first column, the first character is the file object type, such as directory (d), followed by permissions.  
 
 The second column indicates the number of hard links to the file.  
@@ -334,11 +334,11 @@ The meaning of the conditional values of the permission flags:
 as the mode of access to the file? Give examples, demonstrate on the terminal.</summary>
 You can use the chown command to change the owner of a directory (file).
 Change of owner only:
-</p><img src=""></p>
+</p><img src="https://github.com/Ponomarenko-Daria/DevOps_online_Avdeevka_2021Q4/blob/master/m5/Screensots5.2/14.1.jpg"></p>
 Change owner and group:
-</p><img src=""></p>
+</p><img src="https://github.com/Ponomarenko-Daria/DevOps_online_Avdeevka_2021Q4/blob/master/m5/Screensots5.2/14.2.jpg"></p>
 To change permissions, I used the chmod command.
- </p><img src=""></p> 
+ </p><img src="https://github.com/Ponomarenko-Daria/DevOps_online_Avdeevka_2021Q4/blob/master/m5/Screensots5.2/14.3.jpg"></p> 
   </details>
   
    <details><summary>15. What is an example of octal representation of access rights? Describe the 
@@ -384,12 +384,16 @@ The following command is used to set the bit:
 
     chmod u+s <filename>
     
+ </p><img src="https://github.com/Ponomarenko-Daria/DevOps_online_Avdeevka_2021Q4/blob/master/m5/Screensots5.2/15.1.jpg"></p>
+ 
 SetGID - Similar to SetUID, but the file is run as the group that owns the file.  
 
 For example, the crontab command. To set this bit, use the command:
 
     chmod g+s <filename>
     
+</p><img src="https://github.com/Ponomarenko-Daria/DevOps_online_Avdeevka_2021Q4/blob/master/m5/Screensots5.2/15.2.jpg"></p>
+ 
 Sticky bit. It is mainly used for directories to protect files in them.  
 
 An example is the /tmp directory.  
@@ -397,7 +401,8 @@ An example is the /tmp directory.
 The command is used to install:
 
     chmod +t <filename>
-    
+ 
+</p><img src="https://github.com/Ponomarenko-Daria/DevOps_online_Avdeevka_2021Q4/blob/master/m5/Screensots5.2/15.3.jpg"></p>
 Removing special bits:
 
     chmod u-s <filename>
