@@ -19,9 +19,9 @@ Syntax:
 
         pstree [OPTIONS] [UserName or PID]
 
-<img src="1.1"></p>  
+<img src="https://github.com/Ponomarenko-Daria/DevOps_online_Avdeevka_2021Q4/blob/master/m5/Screenshots5.3/1.1.jpg"></p>  
 Selected the chain of ancestors of the current process:
-<img src="1.2"></p>
+<img src="https://github.com/Ponomarenko-Daria/DevOps_online_Avdeevka_2021Q4/blob/master/m5/Screenshots5.3/1.2.jpg"></p>
 
 3.  What is a proc file system?  </p>
 The /proc filesystem is a virtual filesystem. It does not take up disk space. Its main task is to obtain the state of the system and partially perform control actions.
@@ -35,25 +35,25 @@ We can display information about the CPU using the commands
 
         cat /proc/cpuinfo
 
-    <img src="1.3"></p>
-    <img src="1.4"></p>
+<img src="https://github.com/Ponomarenko-Daria/DevOps_online_Avdeevka_2021Q4/blob/master/m5/Screenshots5.3/1.3.jpg"></p>
+<img src="https://github.com/Ponomarenko-Daria/DevOps_online_Avdeevka_2021Q4/blob/master/m5/Screenshots5.3/1.4.jpg"></p>
 </p>
 
 5. Use the ps command to get information about the process. The information should be as 
 follows: the owner of the process, the arguments with which the process was launched for 
 execution, the group owner of this process, etc.</p>
-    <img src="1.5"></p>
+    <img src="https://github.com/Ponomarenko-Daria/DevOps_online_Avdeevka_2021Q4/blob/master/m5/Screenshots5.3/1.5.jpg"></p>
 </p>
 
 6. How to define kernel processes and user processes?  </p>
 Kernel processes are displayed using the command:
 
         ps --ppid=2 --pid=2
-    <img src="1.6"></p>
+<img src="https://github.com/Ponomarenko-Daria/DevOps_online_Avdeevka_2021Q4/blob/master/m5/Screenshots5.3/1.6.jpg"></p>
     To display user processes, I use the command:
 
         ps -N --ppid=2 --pid=2
-    <img src="1.7"></p>
+<img src="https://github.com/Ponomarenko-Daria/DevOps_online_Avdeevka_2021Q4/blob/master/m5/Screenshots5.3/1.7.jpg"></p>
 </p>
 
 7. Print the list of processes to the terminal. Briefly describe the statuses of the processes. 
@@ -62,7 +62,7 @@ What condition are they in, or can they be arriving in? </p>
 
         ps -aux
 
-<img src="2.1"></p>
+<img src="https://github.com/Ponomarenko-Daria/DevOps_online_Avdeevka_2021Q4/blob/master/m5/Screenshots5.3/2.1.jpg"></p>
 
 - R - the process is running or ready to run (ready state)
 - D - process in a "dreamless sleep" - waiting for disk I/O
@@ -81,14 +81,14 @@ If you need to see the processes performed by a specific user, use the command:
     For example:
 
         ps U ubuntu
-<img src="1.8"></p>
+<img src="https://github.com/Ponomarenko-Daria/DevOps_online_Avdeevka_2021Q4/blob/master/m5/Screenshots5.3/1.8.jpg"></p>
 </p>
 
 9. . What utilities can be used to analyze existing running tasks (by analyzing the help for the ps 
 command)?</p>
 Looking at the help for the ps command, we can see that commands such as pgrep, pstree, top and proc can also be used.
 
-<img src="2.2"></p>
+<img src="https://github.com/Ponomarenko-Daria/DevOps_online_Avdeevka_2021Q4/blob/master/m5/Screenshots5.3/2.2.jpg"></p>
 
 </p>
 
@@ -100,7 +100,7 @@ The top command allows you to display information about the system, as well as a
 To display processes running on behalf of a specific user, use the command:
 
         top -u ubuntu
-<img src="1.9"></p>
+<img src="https://github.com/Ponomarenko-Daria/DevOps_online_Avdeevka_2021Q4/blob/master/m5/Screenshots5.3/1.9.jpg"></p>
 </p>
 
  12. What interactive commands can be used to control the top command? Give a couple of examples.</p>
@@ -139,10 +139,10 @@ To sort the output, use the following command:
         ps -ef --sort [sortcolumns]
 
 For example:
-<img src="2.3"></p>
-<img src="2.4"></p>
-<img src="2.5"></p>
-<img src="2.6"></p>
+<img src="https://github.com/Ponomarenko-Daria/DevOps_online_Avdeevka_2021Q4/blob/master/m5/Screenshots5.3/2.3.jpg"></p>
+<img src="https://github.com/Ponomarenko-Daria/DevOps_online_Avdeevka_2021Q4/blob/master/m5/Screenshots5.3/2.4.jpg"></p>
+<img src="https://github.com/Ponomarenko-Daria/DevOps_online_Avdeevka_2021Q4/blob/master/m5/Screenshots5.3/2.5.jpg"></p>
+<img src="https://github.com/Ponomarenko-Daria/DevOps_online_Avdeevka_2021Q4/blob/master/m5/Screenshots5.3/2.6.jpg"></p>
 </p>
 
 14. Concept of priority, what commands are used to set priority?</p>
@@ -163,7 +163,7 @@ Syntax:
 
 We use the top command, then press the r key and change the desired values.  
 
-<img src="2.7"></p>
+<img src="https://github.com/Ponomarenko-Daria/DevOps_online_Avdeevka_2021Q4/blob/master/m5/Screenshots5.3/2.7.jpg"></p>
 
 </p>
 
@@ -174,7 +174,7 @@ To view all signals, use the command:
 
     kill -l
 
-<img src="2.8"></p>
+<img src="https://github.com/Ponomarenko-Daria/DevOps_online_Avdeevka_2021Q4/blob/master/m5/Screenshots5.3/2.8.jpg"></p>
 
 To send a signal to a process (or group of processes), you can use the kill command in the following form:
 
@@ -200,9 +200,9 @@ ssh login@address to connect to the server.
 ssh-keygen to generate new pair of keys.
 ssh-add "path\to\key" to add key and connecting without using the path in cli.
 scp "path\in\windows" login@adress:/"path/on/server"
-<img src="2.9"></p>
-<img src="3.1"></p>
-<img src="3.2"></p>
+<img src="https://github.com/Ponomarenko-Daria/DevOps_online_Avdeevka_2021Q4/blob/master/m5/Screenshots5.3/2.9.jpg"></p>
+<img src="https://github.com/Ponomarenko-Daria/DevOps_online_Avdeevka_2021Q4/blob/master/m5/Screenshots5.3/3.1.jpg"></p>
+<img src="https://github.com/Ponomarenko-Daria/DevOps_online_Avdeevka_2021Q4/blob/master/m5/Screenshots5.3/3.2.jpg"></p>
 </p>
 
 2. Implement basic SSH settings to increase the security of the client-server connection (at least </p>
@@ -226,14 +226,14 @@ We can choose the following keys to encrypt in SSH:
 - ed25519-sk.
 Use the 't' option to change the key type.  
 Examples:
-<img src="3.3"></p>
-<img src="3.4"></p>
-<img src="3.5"></p>
+<img src="https://github.com/Ponomarenko-Daria/DevOps_online_Avdeevka_2021Q4/blob/master/m5/Screenshots5.3/3.3.jpg"></p>
+<img src="https://github.com/Ponomarenko-Daria/DevOps_online_Avdeevka_2021Q4/blob/master/m5/Screenshots5.3/3.4.jpg"></p>
+<img src="https://github.com/Ponomarenko-Daria/DevOps_online_Avdeevka_2021Q4/blob/master/m5/Screenshots5.3/3.5.jpg"></p>
 </p>
 
 4. Implement port forwarding for the SSH client from the host machine to the guest Linux virtual machine behind NAT. </p>
-<img src="3.6"></p>
-<img src="3.7"></p>
+<img src="https://github.com/Ponomarenko-Daria/DevOps_online_Avdeevka_2021Q4/blob/master/m5/Screenshots5.3/3.6.jpg"></p>
+<img src="https://github.com/Ponomarenko-Daria/DevOps_online_Avdeevka_2021Q4/blob/master/m5/Screenshots5.3/3.7.jpg"></p>
 </p>
 
 </details>
