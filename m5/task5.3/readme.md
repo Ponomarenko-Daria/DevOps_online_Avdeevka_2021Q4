@@ -195,12 +195,14 @@ To send a signal to a process (or group of processes), you can use the kill comm
 
  1. Check the implementability of the most frequently used OPENSSH commands in the MS Windows operating system. (Description of the expected result of the commands + screenshots: command – result should be presented)
 </p>
+
 The most popular commands to use OpenSSH in OS Windows is:
-ssh login@address to connect to the server. 
-ssh-keygen to generate new pair of keys.
-ssh-add "path\to\key" to add key and connecting without using the path in cli.
-scp "path\in\windows" login@adress:/"path/on/server"
-<img src="https://github.com/Ponomarenko-Daria/DevOps_online_Avdeevka_2021Q4/blob/master/m5/Screenshots5.3/2.9.jpg"></p>
+- ssh login@address to connect to the server. 
+- ssh-keygen to generate new pair of keys.
+- ssh-add "path\to\key" to add key and connecting without using the path in cli.  
+- scp "path\in\windows" login@adress:/"path/on/server"
+
+</p><img src="https://github.com/Ponomarenko-Daria/DevOps_online_Avdeevka_2021Q4/blob/master/m5/Screenshots5.3/2.9.jpg"></p>
 <img src="https://github.com/Ponomarenko-Daria/DevOps_online_Avdeevka_2021Q4/blob/master/m5/Screenshots5.3/3.1.jpg"></p>
 <img src="https://github.com/Ponomarenko-Daria/DevOps_online_Avdeevka_2021Q4/blob/master/m5/Screenshots5.3/3.2.jpg"></p>
 </p>
