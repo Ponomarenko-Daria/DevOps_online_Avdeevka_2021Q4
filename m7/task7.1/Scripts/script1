@@ -1,0 +1,38 @@
+#!/bin/bash
+
+function print {
+    echo "NAME
+        script1 - display netstat
+
+SYNOPSYS
+        ./script1 [key] [options]
+          
+OPTIONS
+        --all - displays the IP addresses and symbolic names of all hosts in the current subnet.
+        --target - displays a list of open system TCP ports.
+
+EXAMPLE
+        ./script1 --all 192.168.31.1/24
+        ./script1 --target 192.168.31.231
+        
+"
+}
+
+function netstat {
+    nmap -sP "$1" | awk '{if (NR % 2 == 0) print $6, $5}'
+}
+
+function target {
+    nmap -sT "$1" | awk '{if (NR>=5) print}'
+}  
+
+if [[ -n "$1" && -n "$2" ]]
+then
+case "$1" in
+--all) netstat "$2" ;;
+--target) target "$2";;
+*) echo "$1 is not an option";;
+esac
+else 
+print 
+fi

@@ -1,0 +1,71 @@
+#!/bin/bash
+
+function print {
+    echo "NAME
+        script2 - Apache parser
+
+SYNOPSYS
+        ./script2 [key] [namefilelog]
+
+OPTIONS
+        -iptop - Top IP-address by requests
+        -pagetop - Top Site by requests
+        -req - Number of requests from ip
+        -nepage - Non-existent pages
+        -treq - The time at which the site received the most requests
+        -bots - Search bots visited the site
+         
+EXAMPLE
+        ./script2 -iptop apache_logs.txt
+        ./script2 -nepage example_log.log
+
+"
+}
+
+function IP_Top {
+    echo "Top IP-address by requests:"
+    awk '{print $1}' "$1" | sort -n | uniq -c | sort | tail -n 1
+}
+
+ 
+function PageTop {
+    echo "Top Page by requests:"
+    awk '{print $7}' "$1" | sort -n | uniq -c | sort -nk1 | tail -n 1
+}  
+
+function  requests {
+    echo "Number of requests from ip: "
+    awk '{print $1}' "$1" | sort -n | uniq -c | sort
+}  
+
+function  NotExPage {
+    echo "Non-existent pages: "
+    awk '{if ($9 == "404") print $7}' "$1" 
+}  
+
+function  TimeRequests {
+    echo "The time at which the site received the most requests: "
+    echo "    Req  Time"
+    awk -F: '{print $2}' "$1" | uniq -c | sort 
+} 
+
+function Bots {
+    echo "What search bots visited the site?"
+    grep "Bot" "$1"
+}
+
+
+if [[ -n "$1" && -n "$2" ]]
+then
+case "$1" in
+-iptop) IP_Top "$2" ;;
+-pagetop) PageTop "$2";;
+-req) requests "$2";;
+-nepage) NotExPage "$2" ;;
+-treq) TimeRequests "$2" ;;
+-bots) Bots "$2" ;;
+*) echo "$1 is not an option";;
+esac
+else 
+print 
+fi

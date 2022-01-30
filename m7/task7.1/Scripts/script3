@@ -1,0 +1,26 @@
+#!/bin/bash
+
+function print {
+    echo "
+    NAME
+        script3 - backup script
+
+    SYNOPSYS
+        ./script3 [SRC] [DEST]
+
+    EXAMPLE
+        ./script3 "/home/daria/namefolder/" "/home/daria/namefolder_reserv"
+        ./script3 "namefolder/" "namefolder_reserv"
+    "
+}
+
+
+if [[ -n "$1" && -n "$2" ]]
+then
+crontab -l > cron
+echo "* * * * * rsync -avp "$1" "$2" --delete-after --log-file=/home/daria/logs/log_file.log" > cron
+crontab cron
+
+else 
+print
+fi
