@@ -4,13 +4,13 @@
 First, I create virtual mashines VM1 and VM2.
 </p><img src="https://github.com/Ponomarenko-Daria/DevOps_online_Avdeevka_2021Q4/blob/master/m6/task6.1/Screenshots6.1/1.1.jpg"></p>
 VM1 has 2 interfases (NAT and internal), VM2 has 1 interfase (internal)
-</p><img src="https://github.com/Ponomarenko-Daria/DevOps_online_Avdeevka_2021Q4/blob/master/m6/Screenshots6.1/task6.1/1.2.jpg"></p>
-<img src="https://github.com/Ponomarenko-Daria/DevOps_online_Avdeevka_2021Q4/blob/master/m6/Screenshots6.1/task6.1/1.3.jpg"></p>
+</p><img src="https://github.com/Ponomarenko-Daria/DevOps_online_Avdeevka_2021Q4/blob/master/m6/Screenshots6.1/1.2.jpg"></p>
+<img src="https://github.com/Ponomarenko-Daria/DevOps_online_Avdeevka_2021Q4/blob/master/m6/task6.1/Screenshots6.1/1.3.jpg"></p>
 
         sudo vi /etc/netplan/00-installer-config.yaml
         sudo netplan apply
         
-</p><img src="https://github.com/Ponomarenko-Daria/DevOps_online_Avdeevka_2021Q4/blob/master/m6/Screenshots6.1/task6.1/1.4.jpg"><p>        
+</p><img src="https://github.com/Ponomarenko-Daria/DevOps_online_Avdeevka_2021Q4/blob/master/m6/task6.1/Screenshots6.1/1.4.jpg"><p>        
 
 To set priority use:
 
@@ -27,7 +27,7 @@ Next I uncommeted the line
 
     sudo /etc/sysctl.conf
 
-</p><img src="https://github.com/Ponomarenko-Daria/DevOps_online_Avdeevka_2021Q4/blob/master/m6/Screenshots6.1/task6.1/1.5.jpg"></p>
+</p><img src="https://github.com/Ponomarenko-Daria/DevOps_online_Avdeevka_2021Q4/blob/master/m6/task6.1/Screenshots6.1/1.5.jpg"></p>
 
 And execute command:
 
@@ -39,18 +39,18 @@ Next I add the table NAT to the POSTROUTING policy
 
 Check the access to the Internet, (just ping, for example, 8.8.8.8).
 Make ping 8.8.8.8 on VM2
-</p><img src="https://github.com/Ponomarenko-Daria/DevOps_online_Avdeevka_2021Q4/blob/master/m6/Screenshots6.1/task6.1/1.6.jpg"></p>
+</p><img src="https://github.com/Ponomarenko-Daria/DevOps_online_Avdeevka_2021Q4/blob/master/m6/task6.1/Screenshots6.1/1.6.jpg"></p>
 
 Determine, which resource has an IP address 8.8.8.8 and determine, which IP address belongs to resource epam.com.
 
-</p><img src="https://github.com/Ponomarenko-Daria/DevOps_online_Avdeevka_2021Q4/blob/master/m6/Screenshots6.1/task6.1/1.7.jpg"></p>
+</p><img src="https://github.com/Ponomarenko-Daria/DevOps_online_Avdeevka_2021Q4/blob/master/m6/task6.1/Screenshots6.1/1.7.jpg"></p>
 
 Determine the default gateway for your HOST and display routing table.
 
     route -n
 
-</p><img src="https://github.com/Ponomarenko-Daria/DevOps_online_Avdeevka_2021Q4/blob/master/m6/Screenshots6.1/task6.1/1.8.jpg"></p>
+</p><img src="https://github.com/Ponomarenko-Daria/DevOps_online_Avdeevka_2021Q4/blob/master/m6/task6.1/Screenshots6.1/1.8.jpg"></p>
 
 Trace the route to google.com.
 
-</p><img src="https://github.com/Ponomarenko-Daria/DevOps_online_Avdeevka_2021Q4/blob/master/m6/Screenshots6.1/task6.1/1.9.jpg"></p>
+</p><img src="https://github.com/Ponomarenko-Daria/DevOps_online_Avdeevka_2021Q4/blob/master/m6/task6.1/Screenshots6.1/1.9.jpg"></p>
