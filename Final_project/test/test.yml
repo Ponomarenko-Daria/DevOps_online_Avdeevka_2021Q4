@@ -1,0 +1,20 @@
+- name: Test server
+  hosts: all
+  become: yes
+  tasks:
+  - name: Update packets
+    apt: update_cache=yes force_apt_get=yes cache_valid_time=3000
+  - name: Install OpenJdk-11
+    apt:
+      name: openjdk-11-jdk
+      state: present
+      update_cache: yes
+  - name: Copy bash script
+    copy:
+      src: ./test.sh
+      dest: /home/ubuntu/
+      owner: "ubuntu"
+      group: "ubuntu"
+      mode: "0766"
+  - name: Run Tests
+    shell: /home/ubuntu/test.sh

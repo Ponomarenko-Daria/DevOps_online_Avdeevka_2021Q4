@@ -1,0 +1,14 @@
+---
+- name: Update docker container on prod
+  hosts: all
+  become: yes
+  tasks:
+  - name: Copy bash script
+    copy:
+      src: ./deploy.sh
+      dest: /home/ubuntu/deploy.sh
+      owner: "ubuntu"
+      group: "ubuntu"
+      mode: "0766"
+  - name: Run bash script
+    shell: /home/ubuntu/deploy.sh

@@ -1,0 +1,43 @@
+pipeline {
+    agent any
+    environment {
+            AWS_ACCESS_KEY = credentials('accesskey')
+            AWS_SECRET_KEY = credentials('secretkey')
+            AWS_KEY = credentials('aws')
+            DOCKER = credentials('Docker')
+            }
+        stages {
+            stage('Test') {
+            steps {
+            echo "-----------------------------TEST STAGE-----------------------------------"
+            sh 'mkdir petclinic'
+            dir('petclinic') {
+            git branch: 'main', url: 'git@github.com:Ponomarenko-Daria/petclinic.git', credentialsId: 'github_key'
+            } 
+            sh 'terraform -chdir=test init'
+            sh 'terraform -chdir=test apply -auto-approve -var="aws_key=$AWS_KEY" -var="access_key=$AWS_ACCESS_KEY" -var="secret_key=$AWS_SECRET_KEY" '
+            sh 'terraform -chdir=test destroy -auto-approve -var="access_key=$AWS_ACCESS_KEY" -var="secret_key=$AWS_SECRET_KEY" '
+            echo "-----------------------------TEST PASSED----------------------------------"
+            }
+        }
+        stage('Build') {  
+            steps {
+            echo "-----------------------------BUILD STAGE-----------------------------------"
+            sh 'terraform -chdir=build init'
+            sh 'terraform -chdir=build apply -auto-approve -var="aws_key=$AWS_KEY" -var="access_key=$AWS_ACCESS_KEY" -var="secret_key=$AWS_SECRET_KEY" -var="dockerlogin=$DOCKER_USR" -var="dockerpsw=$DOCKER_PSW"'
+            sh 'terraform -chdir=build destroy -auto-approve -var="access_key=$AWS_ACCESS_KEY" -var="secret_key=$AWS_SECRET_KEY" '
+            echo "-----------------------------BUILD PASSED----------------------------------"
+            }
+        }
+        stage('Deploy') {
+            steps {
+            echo "-----------------------------DEPLOY STAGE-----------------------------------"
+            sh 'terraform -chdir=deploy init'
+            sh 'terraform -chdir=deploy apply -auto-approve -var="aws_key=$AWS_KEY" -var="access_key=$AWS_ACCESS_KEY" -var="secret_key=$AWS_SECRET_KEY" -var="dockerlogin=$DOCKER_USR" -var="dockerpsw=$DOCKER_PSW"'
+            sh 'terraform -chdir=deploy destroy -auto-approve -var="access_key=$AWS_ACCESS_KEY" -var="secret_key=$AWS_SECRET_KEY" ' 
+            echo "-----------------------------DEPLOY PASSED----------------------------------"
+            cleanWs()
+            }
+        }
+    }
+}
