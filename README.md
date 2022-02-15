@@ -1,4 +1,5 @@
-# DevOps_online_Avdeevka_2021Q4
+# Repository with home tasks from course "EPAM DevOps Winter Program 2021-2022"
+## Ponomarenko Daria
 ***
 
 
